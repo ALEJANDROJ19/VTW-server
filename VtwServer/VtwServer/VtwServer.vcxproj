@@ -1,0 +1,930 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{4F3A759D-8AAF-4332-9E86-8FD55962487B}</ProjectGuid>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <Keyword>ManagedCProj</Keyword>
+    <RootNamespace>VtwServer</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CLRSupport>true</CLRSupport>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>WIN32;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies />
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Encoder.cpp" />
+    <ClCompile Include="InterfaceForm.cpp" />
+    <ClCompile Include="libvpx\args.c" />
+    <ClCompile Include="libvpx\examples\decode_to_md5.c" />
+    <ClCompile Include="libvpx\examples\decode_with_drops.c" />
+    <ClCompile Include="libvpx\examples\postproc.c" />
+    <ClCompile Include="libvpx\examples\resize_util.c" />
+    <ClCompile Include="libvpx\examples\set_maps.c" />
+    <ClCompile Include="libvpx\examples\simple_decoder.c" />
+    <ClCompile Include="libvpx\examples\simple_encoder.c" />
+    <ClCompile Include="libvpx\examples\twopass_encoder.c" />
+    <ClCompile Include="libvpx\examples\vp8cx_set_ref.c" />
+    <ClCompile Include="libvpx\examples\vp8_multi_resolution_encoder.c" />
+    <ClCompile Include="libvpx\examples\vp9cx_set_ref.c" />
+    <ClCompile Include="libvpx\examples\vp9_lossless_encoder.c" />
+    <ClCompile Include="libvpx\examples\vp9_spatial_svc_encoder.c" />
+    <ClCompile Include="libvpx\examples\vpx_temporal_svc_encoder.c" />
+    <ClCompile Include="libvpx\ivfdec.c" />
+    <ClCompile Include="libvpx\ivfenc.c" />
+    <ClCompile Include="libvpx\md5_utils.c" />
+    <ClCompile Include="libvpx\rate_hist.c" />
+    <ClCompile Include="libvpx\test\active_map_refresh_test.cc" />
+    <ClCompile Include="libvpx\test\active_map_test.cc" />
+    <ClCompile Include="libvpx\test\add_noise_test.cc" />
+    <ClCompile Include="libvpx\test\altref_test.cc" />
+    <ClCompile Include="libvpx\test\aq_segment_test.cc" />
+    <ClCompile Include="libvpx\test\avg_test.cc" />
+    <ClCompile Include="libvpx\test\blockiness_test.cc" />
+    <ClCompile Include="libvpx\test\borders_test.cc" />
+    <ClCompile Include="libvpx\test\byte_alignment_test.cc" />
+    <ClCompile Include="libvpx\test\config_test.cc" />
+    <ClCompile Include="libvpx\test\consistency_test.cc" />
+    <ClCompile Include="libvpx\test\convolve_test.cc" />
+    <ClCompile Include="libvpx\test\cpu_speed_test.cc" />
+    <ClCompile Include="libvpx\test\cq_test.cc" />
+    <ClCompile Include="libvpx\test\datarate_test.cc" />
+    <ClCompile Include="libvpx\test\dct16x16_test.cc" />
+    <ClCompile Include="libvpx\test\dct32x32_test.cc" />
+    <ClCompile Include="libvpx\test\decode_api_test.cc" />
+    <ClCompile Include="libvpx\test\decode_perf_test.cc" />
+    <ClCompile Include="libvpx\test\decode_test_driver.cc" />
+    <ClCompile Include="libvpx\test\encode_api_test.cc" />
+    <ClCompile Include="libvpx\test\encode_perf_test.cc" />
+    <ClCompile Include="libvpx\test\encode_test_driver.cc" />
+    <ClCompile Include="libvpx\test\error_resilience_test.cc" />
+    <ClCompile Include="libvpx\test\external_frame_buffer_test.cc" />
+    <ClCompile Include="libvpx\test\fdct4x4_test.cc" />
+    <ClCompile Include="libvpx\test\fdct8x8_test.cc" />
+    <ClCompile Include="libvpx\test\frame_size_tests.cc" />
+    <ClCompile Include="libvpx\test\hadamard_test.cc" />
+    <ClCompile Include="libvpx\test\idct8x8_test.cc" />
+    <ClCompile Include="libvpx\test\idct_test.cc" />
+    <ClCompile Include="libvpx\test\invalid_file_test.cc" />
+    <ClCompile Include="libvpx\test\keyframe_test.cc" />
+    <ClCompile Include="libvpx\test\level_test.cc" />
+    <ClCompile Include="libvpx\test\lpf_8_test.cc" />
+    <ClCompile Include="libvpx\test\minmax_test.cc" />
+    <ClCompile Include="libvpx\test\partial_idct_test.cc" />
+    <ClCompile Include="libvpx\test\pp_filter_test.cc" />
+    <ClCompile Include="libvpx\test\quantize_test.cc" />
+    <ClCompile Include="libvpx\test\realtime_test.cc" />
+    <ClCompile Include="libvpx\test\resize_test.cc" />
+    <ClCompile Include="libvpx\test\sad_test.cc" />
+    <ClCompile Include="libvpx\test\set_roi.cc" />
+    <ClCompile Include="libvpx\test\sixtap_predict_test.cc" />
+    <ClCompile Include="libvpx\test\sum_squares_test.cc" />
+    <ClCompile Include="libvpx\test\superframe_test.cc" />
+    <ClCompile Include="libvpx\test\svc_test.cc" />
+    <ClCompile Include="libvpx\test\test_intra_pred_speed.cc" />
+    <ClCompile Include="libvpx\test\test_libvpx.cc" />
+    <ClCompile Include="libvpx\test\test_vectors.cc" />
+    <ClCompile Include="libvpx\test\test_vector_test.cc" />
+    <ClCompile Include="libvpx\test\tile_independence_test.cc" />
+    <ClCompile Include="libvpx\test\user_priv_test.cc" />
+    <ClCompile Include="libvpx\test\variance_test.cc" />
+    <ClCompile Include="libvpx\test\vp8_boolcoder_test.cc" />
+    <ClCompile Include="libvpx\test\vp8_decrypt_test.cc" />
+    <ClCompile Include="libvpx\test\vp8_denoiser_sse2_test.cc" />
+    <ClCompile Include="libvpx\test\vp8_fdct4x4_test.cc" />
+    <ClCompile Include="libvpx\test\vp8_fragments_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_arf_freq_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_boolcoder_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_decrypt_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_denoiser_sse2_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_encoder_parms_get_to_decoder.cc" />
+    <ClCompile Include="libvpx\test\vp9_end_to_end_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_error_block_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_ethread_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_frame_parallel_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_intrapred_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_lossless_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_quantize_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_skip_loopfilter_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_subtract_test.cc" />
+    <ClCompile Include="libvpx\test\vp9_thread_test.cc" />
+    <ClCompile Include="libvpx\test\vpx_scale_test.cc" />
+    <ClCompile Include="libvpx\test\y4m_test.cc" />
+    <ClCompile Include="libvpx\third_party\googletest\src\src\gtest-all.cc" />
+    <ClCompile Include="libvpx\third_party\googletest\src\src\gtest_main.cc" />
+    <ClCompile Include="libvpx\third_party\libwebm\common\file_util.cc" />
+    <ClCompile Include="libvpx\third_party\libwebm\common\hdr_util.cc" />
+    <ClCompile Include="libvpx\third_party\libwebm\mkvmuxer\mkvmuxer.cc" />
+    <ClCompile Include="libvpx\third_party\libwebm\mkvmuxer\mkvmuxerutil.cc" />
+    <ClCompile Include="libvpx\third_party\libwebm\mkvmuxer\mkvwriter.cc" />
+    <ClCompile Include="libvpx\third_party\libwebm\mkvparser\mkvparser.cc" />
+    <ClCompile Include="libvpx\third_party\libwebm\mkvparser\mkvreader.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\compare.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\compare_common.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\compare_gcc.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\compare_neon.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\compare_neon64.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\compare_win.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\convert.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\convert_argb.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\convert_from.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\convert_from_argb.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\convert_jpeg.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\convert_to_argb.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\convert_to_i420.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\cpu_id.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\mjpeg_decoder.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\mjpeg_validate.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\planar_functions.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_any.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_argb.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_common.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_gcc.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_mips.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_neon.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_neon64.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\rotate_win.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\row_any.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\row_common.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\row_gcc.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\row_mips.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\row_neon.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\row_neon64.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\row_win.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_any.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_argb.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_common.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_gcc.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_mips.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_neon.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_neon64.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\scale_win.cc" />
+    <ClCompile Include="libvpx\third_party\libyuv\source\video_common.cc" />
+    <ClCompile Include="libvpx\tools_common.c" />
+    <ClCompile Include="libvpx\video_reader.c" />
+    <ClCompile Include="libvpx\video_writer.c" />
+    <ClCompile Include="libvpx\vp8\common\alloccommon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\armv6\idct_blk_v6.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\bilinearfilter_arm.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\dequantize_arm.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\filter_arm.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\loopfilter_arm.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\bilinearpredict_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\copymem_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\dc_only_idct_add_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\dequantizeb_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\dequant_idct_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\idct_blk_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\idct_dequant_0_2x_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\idct_dequant_full_2x_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\iwalsh_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\loopfiltersimplehorizontaledge_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\loopfiltersimpleverticaledge_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\mbloopfilter_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\shortidct4x4llm_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\sixtappredict_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\arm\neon\vp8_loopfilter_neon.c" />
+    <ClCompile Include="libvpx\vp8\common\blockd.c" />
+    <ClCompile Include="libvpx\vp8\common\context.c" />
+    <ClCompile Include="libvpx\vp8\common\copy_c.c" />
+    <ClCompile Include="libvpx\vp8\common\debugmodes.c" />
+    <ClCompile Include="libvpx\vp8\common\dequantize.c" />
+    <ClCompile Include="libvpx\vp8\common\entropy.c" />
+    <ClCompile Include="libvpx\vp8\common\entropymode.c" />
+    <ClCompile Include="libvpx\vp8\common\entropymv.c" />
+    <ClCompile Include="libvpx\vp8\common\extend.c" />
+    <ClCompile Include="libvpx\vp8\common\filter.c" />
+    <ClCompile Include="libvpx\vp8\common\findnearmv.c" />
+    <ClCompile Include="libvpx\vp8\common\generic\systemdependent.c" />
+    <ClCompile Include="libvpx\vp8\common\idctllm.c" />
+    <ClCompile Include="libvpx\vp8\common\idct_blk.c" />
+    <ClCompile Include="libvpx\vp8\common\loopfilter_filters.c" />
+    <ClCompile Include="libvpx\vp8\common\mbpitch.c" />
+    <ClCompile Include="libvpx\vp8\common\mfqe.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\dspr2\dequantize_dspr2.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\dspr2\filter_dspr2.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\dspr2\idctllm_dspr2.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\dspr2\idct_blk_dspr2.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\dspr2\reconinter_dspr2.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\dspr2\vp8_loopfilter_filters_dspr2.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\msa\bilinear_filter_msa.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\msa\copymem_msa.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\msa\idct_msa.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\msa\loopfilter_filters_msa.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\msa\mfqe_msa.c" />
+    <ClCompile Include="libvpx\vp8\common\mips\msa\sixtap_filter_msa.c" />
+    <ClCompile Include="libvpx\vp8\common\modecont.c" />
+    <ClCompile Include="libvpx\vp8\common\postproc.c" />
+    <ClCompile Include="libvpx\vp8\common\quant_common.c" />
+    <ClCompile Include="libvpx\vp8\common\reconinter.c" />
+    <ClCompile Include="libvpx\vp8\common\reconintra.c" />
+    <ClCompile Include="libvpx\vp8\common\reconintra4x4.c" />
+    <ClCompile Include="libvpx\vp8\common\rtcd.c" />
+    <ClCompile Include="libvpx\vp8\common\setupintrarecon.c" />
+    <ClCompile Include="libvpx\vp8\common\swapyv12buffer.c" />
+    <ClCompile Include="libvpx\vp8\common\textblit.c" />
+    <ClCompile Include="libvpx\vp8\common\treecoder.c" />
+    <ClCompile Include="libvpx\vp8\common\vp8_loopfilter.c" />
+    <ClCompile Include="libvpx\vp8\decoder\dboolhuff.c" />
+    <ClCompile Include="libvpx\vp8\decoder\decodeframe.c" />
+    <ClCompile Include="libvpx\vp8\decoder\decodemv.c" />
+    <ClCompile Include="libvpx\vp8\decoder\detokenize.c" />
+    <ClCompile Include="libvpx\vp8\decoder\error_concealment.c" />
+    <ClCompile Include="libvpx\vp8\decoder\onyxd_if.c" />
+    <ClCompile Include="libvpx\vp8\decoder\threading.c" />
+    <ClCompile Include="libvpx\vp8\encoder\arm\dct_arm.c" />
+    <ClCompile Include="libvpx\vp8\encoder\arm\neon\denoising_neon.c" />
+    <ClCompile Include="libvpx\vp8\encoder\arm\neon\fastquantizeb_neon.c" />
+    <ClCompile Include="libvpx\vp8\encoder\arm\neon\shortfdct_neon.c" />
+    <ClCompile Include="libvpx\vp8\encoder\arm\neon\vp8_shortwalsh4x4_neon.c" />
+    <ClCompile Include="libvpx\vp8\encoder\bitstream.c" />
+    <ClCompile Include="libvpx\vp8\encoder\boolhuff.c" />
+    <ClCompile Include="libvpx\vp8\encoder\dct.c" />
+    <ClCompile Include="libvpx\vp8\encoder\denoising.c" />
+    <ClCompile Include="libvpx\vp8\encoder\encodeframe.c" />
+    <ClCompile Include="libvpx\vp8\encoder\encodeintra.c" />
+    <ClCompile Include="libvpx\vp8\encoder\encodemb.c" />
+    <ClCompile Include="libvpx\vp8\encoder\encodemv.c" />
+    <ClCompile Include="libvpx\vp8\encoder\ethreading.c" />
+    <ClCompile Include="libvpx\vp8\encoder\firstpass.c" />
+    <ClCompile Include="libvpx\vp8\encoder\lookahead.c" />
+    <ClCompile Include="libvpx\vp8\encoder\mcomp.c" />
+    <ClCompile Include="libvpx\vp8\encoder\mips\msa\dct_msa.c" />
+    <ClCompile Include="libvpx\vp8\encoder\mips\msa\denoising_msa.c" />
+    <ClCompile Include="libvpx\vp8\encoder\mips\msa\encodeopt_msa.c" />
+    <ClCompile Include="libvpx\vp8\encoder\mips\msa\quantize_msa.c" />
+    <ClCompile Include="libvpx\vp8\encoder\mips\msa\temporal_filter_msa.c" />
+    <ClCompile Include="libvpx\vp8\encoder\modecosts.c" />
+    <ClCompile Include="libvpx\vp8\encoder\mr_dissim.c" />
+    <ClCompile Include="libvpx\vp8\encoder\onyx_if.c" />
+    <ClCompile Include="libvpx\vp8\encoder\pickinter.c" />
+    <ClCompile Include="libvpx\vp8\encoder\picklpf.c" />
+    <ClCompile Include="libvpx\vp8\encoder\ratectrl.c" />
+    <ClCompile Include="libvpx\vp8\encoder\rdopt.c" />
+    <ClCompile Include="libvpx\vp8\encoder\segmentation.c" />
+    <ClCompile Include="libvpx\vp8\encoder\temporal_filter.c" />
+    <ClCompile Include="libvpx\vp8\encoder\tokenize.c" />
+    <ClCompile Include="libvpx\vp8\encoder\treewriter.c" />
+    <ClCompile Include="libvpx\vp8\encoder\vp8_quantize.c" />
+    <ClCompile Include="libvpx\vp8\vp8_cx_iface.c" />
+    <ClCompile Include="libvpx\vp8\vp8_dx_iface.c" />
+    <ClCompile Include="libvpx\vp9\common\arm\neon\vp9_iht4x4_add_neon.c" />
+    <ClCompile Include="libvpx\vp9\common\arm\neon\vp9_iht8x8_add_neon.c" />
+    <ClCompile Include="libvpx\vp9\common\mips\dspr2\vp9_itrans16_dspr2.c" />
+    <ClCompile Include="libvpx\vp9\common\mips\dspr2\vp9_itrans4_dspr2.c" />
+    <ClCompile Include="libvpx\vp9\common\mips\dspr2\vp9_itrans8_dspr2.c" />
+    <ClCompile Include="libvpx\vp9\common\mips\msa\vp9_idct16x16_msa.c" />
+    <ClCompile Include="libvpx\vp9\common\mips\msa\vp9_idct4x4_msa.c" />
+    <ClCompile Include="libvpx\vp9\common\mips\msa\vp9_idct8x8_msa.c" />
+    <ClCompile Include="libvpx\vp9\common\mips\msa\vp9_mfqe_msa.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_alloccommon.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_blockd.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_common_data.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_debugmodes.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_entropy.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_entropymode.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_entropymv.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_filter.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_frame_buffers.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_idct.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_loopfilter.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_mfqe.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_mvref_common.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_postproc.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_pred_common.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_quant_common.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_reconinter.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_reconintra.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_rtcd.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_scale.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_scan.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_seg_common.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_textblit.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_thread_common.c" />
+    <ClCompile Include="libvpx\vp9\common\vp9_tile_common.c" />
+    <ClCompile Include="libvpx\vp9\decoder\vp9_decodeframe.c" />
+    <ClCompile Include="libvpx\vp9\decoder\vp9_decodemv.c" />
+    <ClCompile Include="libvpx\vp9\decoder\vp9_decoder.c" />
+    <ClCompile Include="libvpx\vp9\decoder\vp9_detokenize.c" />
+    <ClCompile Include="libvpx\vp9\decoder\vp9_dsubexp.c" />
+    <ClCompile Include="libvpx\vp9\decoder\vp9_dthread.c" />
+    <ClCompile Include="libvpx\vp9\encoder\arm\neon\vp9_dct_neon.c" />
+    <ClCompile Include="libvpx\vp9\encoder\arm\neon\vp9_error_neon.c" />
+    <ClCompile Include="libvpx\vp9\encoder\arm\neon\vp9_quantize_neon.c" />
+    <ClCompile Include="libvpx\vp9\encoder\mips\msa\vp9_error_msa.c" />
+    <ClCompile Include="libvpx\vp9\encoder\mips\msa\vp9_fdct16x16_msa.c" />
+    <ClCompile Include="libvpx\vp9\encoder\mips\msa\vp9_fdct4x4_msa.c" />
+    <ClCompile Include="libvpx\vp9\encoder\mips\msa\vp9_fdct8x8_msa.c" />
+    <ClCompile Include="libvpx\vp9\encoder\mips\msa\vp9_temporal_filter_msa.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_aq_360.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_aq_complexity.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_aq_cyclicrefresh.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_aq_variance.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_bitstream.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_blockiness.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_context_tree.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_cost.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_dct.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_denoiser.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_encodeframe.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_encodemb.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_encodemv.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_encoder.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_ethread.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_extend.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_firstpass.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_lookahead.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_mbgraph.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_mcomp.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_noise_estimate.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_picklpf.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_pickmode.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_quantize.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_ratectrl.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_rd.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_rdopt.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_resize.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_segmentation.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_skin_detection.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_speed_features.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_subexp.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_svc_layercontext.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_temporal_filter.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_tokenize.c" />
+    <ClCompile Include="libvpx\vp9\encoder\vp9_treewriter.c" />
+    <ClCompile Include="libvpx\vp9\vp9_cx_iface.c" />
+    <ClCompile Include="libvpx\vp9\vp9_dx_iface.c" />
+    <ClCompile Include="libvpx\vpxdec.c" />
+    <ClCompile Include="libvpx\vpxenc.c" />
+    <ClCompile Include="libvpx\vpxstats.c" />
+    <ClCompile Include="libvpx\vpx\src\svc_encodeframe.c" />
+    <ClCompile Include="libvpx\vpx\src\vpx_codec.c" />
+    <ClCompile Include="libvpx\vpx\src\vpx_decoder.c" />
+    <ClCompile Include="libvpx\vpx\src\vpx_encoder.c" />
+    <ClCompile Include="libvpx\vpx\src\vpx_image.c" />
+    <ClCompile Include="libvpx\vpx_dsp\add_noise.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\avg_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\fwd_txfm_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\hadamard_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct16x16_1_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct16x16_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct16x16_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct32x32_1_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct32x32_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct4x4_1_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct4x4_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct8x8_1_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\idct8x8_add_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\intrapred_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\loopfilter_16_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\loopfilter_4_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\loopfilter_8_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\loopfilter_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\sad4d_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\sad_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\subpel_variance_media.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\subpel_variance_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\subtract_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\variance_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\vpx_convolve8_avg_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\vpx_convolve8_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\vpx_convolve_avg_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\vpx_convolve_copy_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\arm\vpx_convolve_neon.c" />
+    <ClCompile Include="libvpx\vpx_dsp\avg.c" />
+    <ClCompile Include="libvpx\vpx_dsp\bitreader.c" />
+    <ClCompile Include="libvpx\vpx_dsp\bitreader_buffer.c" />
+    <ClCompile Include="libvpx\vpx_dsp\bitwriter.c" />
+    <ClCompile Include="libvpx\vpx_dsp\bitwriter_buffer.c" />
+    <ClCompile Include="libvpx\vpx_dsp\deblock.c" />
+    <ClCompile Include="libvpx\vpx_dsp\fastssim.c" />
+    <ClCompile Include="libvpx\vpx_dsp\fwd_txfm.c" />
+    <ClCompile Include="libvpx\vpx_dsp\intrapred.c" />
+    <ClCompile Include="libvpx\vpx_dsp\inv_txfm.c" />
+    <ClCompile Include="libvpx\vpx_dsp\loopfilter.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\add_noise_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\avg_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\common_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve2_avg_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve2_avg_horiz_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve2_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve2_horiz_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve2_vert_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve8_avg_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve8_avg_horiz_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve8_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve8_horiz_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\convolve8_vert_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\deblock_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\fwd_dct32x32_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\fwd_txfm_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\idct16x16_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\idct32x32_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\idct4x4_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\idct8x8_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\intrapred16_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\intrapred4_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\intrapred8_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\intrapred_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\itrans16_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\itrans32_cols_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\itrans32_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\itrans4_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\itrans8_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\loopfilter_16_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\loopfilter_4_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\loopfilter_8_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\loopfilter_filters_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\loopfilter_mb_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\loopfilter_mb_horiz_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\loopfilter_mb_vert_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\sad_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\subtract_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\sub_pixel_variance_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\variance_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve8_avg_horiz_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve8_avg_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve8_avg_vert_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve8_horiz_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve8_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve8_vert_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve_avg_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\mips\vpx_convolve_copy_msa.c" />
+    <ClCompile Include="libvpx\vpx_dsp\prob.c" />
+    <ClCompile Include="libvpx\vpx_dsp\psnr.c" />
+    <ClCompile Include="libvpx\vpx_dsp\psnrhvs.c" />
+    <ClCompile Include="libvpx\vpx_dsp\quantize.c" />
+    <ClCompile Include="libvpx\vpx_dsp\sad.c" />
+    <ClCompile Include="libvpx\vpx_dsp\ssim.c" />
+    <ClCompile Include="libvpx\vpx_dsp\subtract.c" />
+    <ClCompile Include="libvpx\vpx_dsp\sum_squares.c" />
+    <ClCompile Include="libvpx\vpx_dsp\variance.c" />
+    <ClCompile Include="libvpx\vpx_dsp\vpx_convolve.c" />
+    <ClCompile Include="libvpx\vpx_dsp\vpx_dsp_rtcd.c" />
+    <ClCompile Include="libvpx\vpx_mem\vpx_mem.c" />
+    <ClCompile Include="libvpx\vpx_ports\arm_cpudetect.c" />
+    <ClCompile Include="libvpx\vpx_scale\generic\gen_scalers.c" />
+    <ClCompile Include="libvpx\vpx_scale\generic\vpx_scale.c" />
+    <ClCompile Include="libvpx\vpx_scale\generic\yv12config.c" />
+    <ClCompile Include="libvpx\vpx_scale\generic\yv12extend.c" />
+    <ClCompile Include="libvpx\vpx_scale\mips\dspr2\yv12extend_dspr2.c" />
+    <ClCompile Include="libvpx\vpx_scale\vpx_scale_rtcd.c" />
+    <ClCompile Include="libvpx\vpx_util\vpx_thread.c" />
+    <ClCompile Include="libvpx\warnings.c" />
+    <ClCompile Include="libvpx\webmdec.cc" />
+    <ClCompile Include="libvpx\webmenc.cc" />
+    <ClCompile Include="libvpx\y4menc.c" />
+    <ClCompile Include="libvpx\y4minput.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="InterfaceForm.h">
+      <FileType>CppForm</FileType>
+    </ClInclude>
+    <ClInclude Include="libvpx\args.h" />
+    <ClInclude Include="libvpx\ivfdec.h" />
+    <ClInclude Include="libvpx\ivfenc.h" />
+    <ClInclude Include="libvpx\md5_utils.h" />
+    <ClInclude Include="libvpx\rate_hist.h" />
+    <ClInclude Include="libvpx\test\acm_random.h" />
+    <ClInclude Include="libvpx\test\clear_system_state.h" />
+    <ClInclude Include="libvpx\test\codec_factory.h" />
+    <ClInclude Include="libvpx\test\decode_test_driver.h" />
+    <ClInclude Include="libvpx\test\encode_test_driver.h" />
+    <ClInclude Include="libvpx\test\i420_video_source.h" />
+    <ClInclude Include="libvpx\test\ivf_video_source.h" />
+    <ClInclude Include="libvpx\test\md5_helper.h" />
+    <ClInclude Include="libvpx\test\register_state_check.h" />
+    <ClInclude Include="libvpx\test\test_vectors.h" />
+    <ClInclude Include="libvpx\test\util.h" />
+    <ClInclude Include="libvpx\test\video_source.h" />
+    <ClInclude Include="libvpx\test\webm_video_source.h" />
+    <ClInclude Include="libvpx\test\y4m_video_source.h" />
+    <ClInclude Include="libvpx\test\yuv_video_source.h" />
+    <ClInclude Include="libvpx\third_party\googletest\src\include\gtest\gtest.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\common\file_util.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\common\hdr_util.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\common\webmids.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\mkvmuxer\mkvmuxer.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\mkvmuxer\mkvmuxertypes.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\mkvmuxer\mkvmuxerutil.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\mkvmuxer\mkvwriter.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\mkvparser\mkvparser.h" />
+    <ClInclude Include="libvpx\third_party\libwebm\mkvparser\mkvreader.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\basic_types.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\compare.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\convert.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\convert_argb.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\convert_from.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\convert_from_argb.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\cpu_id.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\mjpeg_decoder.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\planar_functions.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\rotate.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\rotate_argb.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\rotate_row.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\row.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\scale.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\scale_argb.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\scale_row.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\version.h" />
+    <ClInclude Include="libvpx\third_party\libyuv\include\libyuv\video_common.h" />
+    <ClInclude Include="libvpx\tools_common.h" />
+    <ClInclude Include="libvpx\video_common.h" />
+    <ClInclude Include="libvpx\video_reader.h" />
+    <ClInclude Include="libvpx\video_writer.h" />
+    <ClInclude Include="libvpx\vp8\common\alloccommon.h" />
+    <ClInclude Include="libvpx\vp8\common\arm\bilinearfilter_arm.h" />
+    <ClInclude Include="libvpx\vp8\common\blockd.h" />
+    <ClInclude Include="libvpx\vp8\common\coefupdateprobs.h" />
+    <ClInclude Include="libvpx\vp8\common\common.h" />
+    <ClInclude Include="libvpx\vp8\common\default_coef_probs.h" />
+    <ClInclude Include="libvpx\vp8\common\entropy.h" />
+    <ClInclude Include="libvpx\vp8\common\entropymode.h" />
+    <ClInclude Include="libvpx\vp8\common\entropymv.h" />
+    <ClInclude Include="libvpx\vp8\common\extend.h" />
+    <ClInclude Include="libvpx\vp8\common\filter.h" />
+    <ClInclude Include="libvpx\vp8\common\findnearmv.h" />
+    <ClInclude Include="libvpx\vp8\common\header.h" />
+    <ClInclude Include="libvpx\vp8\common\invtrans.h" />
+    <ClInclude Include="libvpx\vp8\common\loopfilter.h" />
+    <ClInclude Include="libvpx\vp8\common\mips\msa\vp8_macros_msa.h" />
+    <ClInclude Include="libvpx\vp8\common\modecont.h" />
+    <ClInclude Include="libvpx\vp8\common\mv.h" />
+    <ClInclude Include="libvpx\vp8\common\onyx.h" />
+    <ClInclude Include="libvpx\vp8\common\onyxc_int.h" />
+    <ClInclude Include="libvpx\vp8\common\onyxd.h" />
+    <ClInclude Include="libvpx\vp8\common\postproc.h" />
+    <ClInclude Include="libvpx\vp8\common\ppflags.h" />
+    <ClInclude Include="libvpx\vp8\common\quant_common.h" />
+    <ClInclude Include="libvpx\vp8\common\reconinter.h" />
+    <ClInclude Include="libvpx\vp8\common\reconintra.h" />
+    <ClInclude Include="libvpx\vp8\common\reconintra4x4.h" />
+    <ClInclude Include="libvpx\vp8\common\setupintrarecon.h" />
+    <ClInclude Include="libvpx\vp8\common\swapyv12buffer.h" />
+    <ClInclude Include="libvpx\vp8\common\systemdependent.h" />
+    <ClInclude Include="libvpx\vp8\common\threading.h" />
+    <ClInclude Include="libvpx\vp8\common\treecoder.h" />
+    <ClInclude Include="libvpx\vp8\common\vp8_entropymodedata.h" />
+    <ClInclude Include="libvpx\vp8\decoder\dboolhuff.h" />
+    <ClInclude Include="libvpx\vp8\decoder\decodemv.h" />
+    <ClInclude Include="libvpx\vp8\decoder\decoderthreading.h" />
+    <ClInclude Include="libvpx\vp8\decoder\detokenize.h" />
+    <ClInclude Include="libvpx\vp8\decoder\ec_types.h" />
+    <ClInclude Include="libvpx\vp8\decoder\error_concealment.h" />
+    <ClInclude Include="libvpx\vp8\decoder\onyxd_int.h" />
+    <ClInclude Include="libvpx\vp8\decoder\treereader.h" />
+    <ClInclude Include="libvpx\vp8\encoder\bitstream.h" />
+    <ClInclude Include="libvpx\vp8\encoder\block.h" />
+    <ClInclude Include="libvpx\vp8\encoder\boolhuff.h" />
+    <ClInclude Include="libvpx\vp8\encoder\dct_value_cost.h" />
+    <ClInclude Include="libvpx\vp8\encoder\dct_value_tokens.h" />
+    <ClInclude Include="libvpx\vp8\encoder\defaultcoefcounts.h" />
+    <ClInclude Include="libvpx\vp8\encoder\denoising.h" />
+    <ClInclude Include="libvpx\vp8\encoder\encodeframe.h" />
+    <ClInclude Include="libvpx\vp8\encoder\encodeintra.h" />
+    <ClInclude Include="libvpx\vp8\encoder\encodemb.h" />
+    <ClInclude Include="libvpx\vp8\encoder\encodemv.h" />
+    <ClInclude Include="libvpx\vp8\encoder\firstpass.h" />
+    <ClInclude Include="libvpx\vp8\encoder\lookahead.h" />
+    <ClInclude Include="libvpx\vp8\encoder\mcomp.h" />
+    <ClInclude Include="libvpx\vp8\encoder\modecosts.h" />
+    <ClInclude Include="libvpx\vp8\encoder\mr_dissim.h" />
+    <ClInclude Include="libvpx\vp8\encoder\onyx_int.h" />
+    <ClInclude Include="libvpx\vp8\encoder\pickinter.h" />
+    <ClInclude Include="libvpx\vp8\encoder\quantize.h" />
+    <ClInclude Include="libvpx\vp8\encoder\ratectrl.h" />
+    <ClInclude Include="libvpx\vp8\encoder\rdopt.h" />
+    <ClInclude Include="libvpx\vp8\encoder\segmentation.h" />
+    <ClInclude Include="libvpx\vp8\encoder\tokenize.h" />
+    <ClInclude Include="libvpx\vp8\encoder\treewriter.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_alloccommon.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_blockd.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_common.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_common_data.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_entropy.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_entropymode.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_entropymv.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_enums.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_filter.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_frame_buffers.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_idct.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_loopfilter.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_mfqe.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_mv.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_mvref_common.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_onyxc_int.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_postproc.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_ppflags.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_pred_common.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_quant_common.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_reconinter.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_reconintra.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_scale.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_scan.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_seg_common.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_textblit.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_thread_common.h" />
+    <ClInclude Include="libvpx\vp9\common\vp9_tile_common.h" />
+    <ClInclude Include="libvpx\vp9\decoder\vp9_decodeframe.h" />
+    <ClInclude Include="libvpx\vp9\decoder\vp9_decodemv.h" />
+    <ClInclude Include="libvpx\vp9\decoder\vp9_decoder.h" />
+    <ClInclude Include="libvpx\vp9\decoder\vp9_detokenize.h" />
+    <ClInclude Include="libvpx\vp9\decoder\vp9_dsubexp.h" />
+    <ClInclude Include="libvpx\vp9\decoder\vp9_dthread.h" />
+    <ClInclude Include="libvpx\vp9\encoder\mips\msa\vp9_fdct_msa.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_aq_360.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_aq_complexity.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_aq_cyclicrefresh.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_aq_variance.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_bitstream.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_block.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_context_tree.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_cost.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_denoiser.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_encodeframe.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_encodemb.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_encodemv.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_encoder.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_ethread.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_extend.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_firstpass.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_lookahead.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_mbgraph.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_mcomp.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_noise_estimate.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_picklpf.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_pickmode.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_quantize.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_ratectrl.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_rd.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_rdopt.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_resize.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_segmentation.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_skin_detection.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_speed_features.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_subexp.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_svc_layercontext.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_temporal_filter.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_tokenize.h" />
+    <ClInclude Include="libvpx\vp9\encoder\vp9_treewriter.h" />
+    <ClInclude Include="libvpx\vp9\vp9_dx_iface.h" />
+    <ClInclude Include="libvpx\vp9\vp9_iface_common.h" />
+    <ClInclude Include="libvpx\vpxenc.h" />
+    <ClInclude Include="libvpx\vpxstats.h" />
+    <ClInclude Include="libvpx\vpx\internal\vpx_codec_internal.h" />
+    <ClInclude Include="libvpx\vpx\svc_context.h" />
+    <ClInclude Include="libvpx\vpx\vp8.h" />
+    <ClInclude Include="libvpx\vpx\vp8cx.h" />
+    <ClInclude Include="libvpx\vpx\vp8dx.h" />
+    <ClInclude Include="libvpx\vpx\vpx_codec.h" />
+    <ClInclude Include="libvpx\vpx\vpx_decoder.h" />
+    <ClInclude Include="libvpx\vpx\vpx_encoder.h" />
+    <ClInclude Include="libvpx\vpx\vpx_frame_buffer.h" />
+    <ClInclude Include="libvpx\vpx\vpx_image.h" />
+    <ClInclude Include="libvpx\vpx\vpx_integer.h" />
+    <ClInclude Include="libvpx\vpx_dsp\bitreader.h" />
+    <ClInclude Include="libvpx\vpx_dsp\bitreader_buffer.h" />
+    <ClInclude Include="libvpx\vpx_dsp\bitwriter.h" />
+    <ClInclude Include="libvpx\vpx_dsp\bitwriter_buffer.h" />
+    <ClInclude Include="libvpx\vpx_dsp\fwd_txfm.h" />
+    <ClInclude Include="libvpx\vpx_dsp\inv_txfm.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\common_dspr2.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\convolve_common_dspr2.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\fwd_txfm_msa.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\inv_txfm_dspr2.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\inv_txfm_msa.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\loopfilter_filters_dspr2.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\loopfilter_macros_dspr2.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\loopfilter_masks_dspr2.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\loopfilter_msa.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\macros_msa.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\txfm_macros_msa.h" />
+    <ClInclude Include="libvpx\vpx_dsp\mips\vpx_convolve_msa.h" />
+    <ClInclude Include="libvpx\vpx_dsp\postproc.h" />
+    <ClInclude Include="libvpx\vpx_dsp\prob.h" />
+    <ClInclude Include="libvpx\vpx_dsp\psnr.h" />
+    <ClInclude Include="libvpx\vpx_dsp\quantize.h" />
+    <ClInclude Include="libvpx\vpx_dsp\ssim.h" />
+    <ClInclude Include="libvpx\vpx_dsp\txfm_common.h" />
+    <ClInclude Include="libvpx\vpx_dsp\variance.h" />
+    <ClInclude Include="libvpx\vpx_dsp\vpx_convolve.h" />
+    <ClInclude Include="libvpx\vpx_dsp\vpx_dsp_common.h" />
+    <ClInclude Include="libvpx\vpx_dsp\vpx_filter.h" />
+    <ClInclude Include="libvpx\vpx_mem\include\vpx_mem_intrnl.h" />
+    <ClInclude Include="libvpx\vpx_mem\vpx_mem.h" />
+    <ClInclude Include="libvpx\vpx_ports\arm.h" />
+    <ClInclude Include="libvpx\vpx_ports\bitops.h" />
+    <ClInclude Include="libvpx\vpx_ports\config.h" />
+    <ClInclude Include="libvpx\vpx_ports\emmintrin_compat.h" />
+    <ClInclude Include="libvpx\vpx_ports\mem.h" />
+    <ClInclude Include="libvpx\vpx_ports\mem_ops.h" />
+    <ClInclude Include="libvpx\vpx_ports\mem_ops_aligned.h" />
+    <ClInclude Include="libvpx\vpx_ports\msvc.h" />
+    <ClInclude Include="libvpx\vpx_ports\system_state.h" />
+    <ClInclude Include="libvpx\vpx_ports\vpx_once.h" />
+    <ClInclude Include="libvpx\vpx_ports\vpx_timer.h" />
+    <ClInclude Include="libvpx\vpx_ports\x86.h" />
+    <ClInclude Include="libvpx\vpx_scale\vpx_scale.h" />
+    <ClInclude Include="libvpx\vpx_scale\yv12config.h" />
+    <ClInclude Include="libvpx\vpx_util\endian_inl.h" />
+    <ClInclude Include="libvpx\vpx_util\vpx_thread.h" />
+    <ClInclude Include="libvpx\warnings.h" />
+    <ClInclude Include="libvpx\webmdec.h" />
+    <ClInclude Include="libvpx\webmenc.h" />
+    <ClInclude Include="libvpx\y4menc.h" />
+    <ClInclude Include="libvpx\y4minput.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="InterfaceForm.resx">
+      <DependentUpon>InterfaceForm.h</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="WMPLib.1.0.dll">
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>false</Isolated>
+    </COMReference>
+    <COMReference Include="AxWMPLib.1.0.dll">
+      <Guid>6bf52a50-394a-11d3-b153-00c04f79faa6</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <WrapperTool>aximp</WrapperTool>
+      <Lcid>0</Lcid>
+      <Isolated>false</Isolated>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="libvpx\third_party\libyuv\source\row_x86.asm" />
+    <None Include="libvpx\third_party\libyuv\source\x86inc.asm" />
+    <None Include="libvpx\third_party\x86inc\x86inc.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\bilinearfilter_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\copymem16x16_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\copymem8x4_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\copymem8x8_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\dc_only_idct_add_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\dequantize_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\dequant_idct_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\filter_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\idct_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\iwalsh_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\loopfilter_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\simpleloopfilter_v6.asm" />
+    <None Include="libvpx\vp8\common\arm\armv6\sixtappredict8x4_v6.asm" />
+    <None Include="libvpx\vp8\encoder\arm\armv6\vp8_short_fdct4x4_armv6.asm" />
+    <None Include="libvpx\vp8\encoder\arm\armv6\walsh_v6.asm" />
+    <None Include="libvpx\vpx_dsp\arm\bilinear_filter_media.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct16x16_1_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct16x16_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct32x32_1_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct32x32_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct4x4_1_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct4x4_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct8x8_1_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\idct8x8_add_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\intrapred_neon_asm.asm" />
+    <None Include="libvpx\vpx_dsp\arm\loopfilter_16_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\loopfilter_4_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\loopfilter_8_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\loopfilter_mb_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\sad_media.asm" />
+    <None Include="libvpx\vpx_dsp\arm\save_reg_neon.asm" />
+    <None Include="libvpx\vpx_dsp\arm\variance_halfpixvar16x16_hv_media.asm" />
+    <None Include="libvpx\vpx_dsp\arm\variance_halfpixvar16x16_h_media.asm" />
+    <None Include="libvpx\vpx_dsp\arm\variance_halfpixvar16x16_v_media.asm" />
+    <None Include="libvpx\vpx_dsp\arm\variance_media.asm" />
+    <None Include="libvpx\vpx_dsp\arm\vpx_convolve8_avg_neon_asm.asm" />
+    <None Include="libvpx\vpx_dsp\arm\vpx_convolve8_neon_asm.asm" />
+    <None Include="libvpx\vpx_dsp\arm\vpx_convolve_avg_neon_asm.asm" />
+    <None Include="libvpx\vpx_dsp\arm\vpx_convolve_copy_neon_asm.asm" />
+    <None Include="libvpx\vpx_ports\emms.asm" />
+    <None Include="libvpx\vpx_ports\x86_abi_support.asm" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
