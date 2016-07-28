@@ -77,6 +77,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
+    <LibraryPath>$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\libvpx;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\libvpx;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
