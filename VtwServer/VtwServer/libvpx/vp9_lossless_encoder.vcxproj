@@ -8,16 +8,16 @@
         Label="ProjectConfigurations"
         >
         <ProjectConfiguration
-            Include="Debug|x64"
+            Include="Debug|Win32"
             >
             <Configuration>Debug</Configuration>
-            <Platform>x64</Platform>
+            <Platform>Win32</Platform>
         </ProjectConfiguration>
         <ProjectConfiguration
-            Include="Release|x64"
+            Include="Release|Win32"
             >
             <Configuration>Release</Configuration>
-            <Platform>x64</Platform>
+            <Platform>Win32</Platform>
         </ProjectConfiguration>
     </ItemGroup>
     <PropertyGroup
@@ -31,20 +31,20 @@
         Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props"
     />
     <PropertyGroup
-        Condition="'$(Configuration)|$(Platform)'=='Release|x64'"
+        Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"
         Label="Configuration"
         >
         <ConfigurationType>Application</ConfigurationType>
-        <PlatformToolset>v140</PlatformToolset>
+        <PlatformToolset>v110</PlatformToolset>
         <CharacterSet>Unicode</CharacterSet>
         <WholeProgramOptimization>true</WholeProgramOptimization>
     </PropertyGroup>
     <PropertyGroup
-        Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"
+        Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"
         Label="Configuration"
         >
         <ConfigurationType>Application</ConfigurationType>
-        <PlatformToolset>v140</PlatformToolset>
+        <PlatformToolset>v110</PlatformToolset>
         <CharacterSet>Unicode</CharacterSet>
     </PropertyGroup>
     <Import
@@ -63,25 +63,25 @@
         Label="UserMacros"
     />
     <PropertyGroup
-        Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"
+        Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"
         >
-        <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
-        <IntDir>x64\$(Configuration)\vp9_lossless_encoder\</IntDir>
+        <OutDir>$(SolutionDir)Win32\$(Configuration)\</OutDir>
+        <IntDir>Win32\$(Configuration)\vp9_lossless_encoder\</IntDir>
     </PropertyGroup>
     <PropertyGroup
-        Condition="'$(Configuration)|$(Platform)'=='Release|x64'"
+        Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"
         >
-        <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
-        <IntDir>x64\$(Configuration)\vp9_lossless_encoder\</IntDir>
+        <OutDir>$(SolutionDir)Win32\$(Configuration)\</OutDir>
+        <IntDir>Win32\$(Configuration)\vp9_lossless_encoder\</IntDir>
     </PropertyGroup>
     <ItemDefinitionGroup
-        Condition="'$(Configuration)|$(Platform)'=='Debug|x64'"
+        Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'"
         >
         <ClCompile>
             <Optimization>Disabled</Optimization>
             <AdditionalIncludeDirectories>&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/third_party/libwebm&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp8&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp8&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp9&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp9&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/third_party/libyuv/include&quot;;&quot;.&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx&quot;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
             <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-            <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+            <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
             <WarningLevel>Level3</WarningLevel>
             <CompileAsWinRT>false</CompileAsWinRT>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
@@ -93,14 +93,14 @@
         </Link>
     </ItemDefinitionGroup>
     <ItemDefinitionGroup
-        Condition="'$(Configuration)|$(Platform)'=='Release|x64'"
+        Condition="'$(Configuration)|$(Platform)'=='Release|Win32'"
         >
         <ClCompile>
             <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
             <Optimization>MaxSpeed</Optimization>
             <AdditionalIncludeDirectories>&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/third_party/libwebm&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp8&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp8&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp9&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/vp9&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/third_party/libyuv/include&quot;;&quot;.&quot;;&quot;/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx&quot;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
             <PreprocessorDefinitions>WIN32;NDEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-            <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+            <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
             <WarningLevel>Level3</WarningLevel>
             <CompileAsWinRT>false</CompileAsWinRT>
             <PrecompiledHeader>NotUsing</PrecompiledHeader>
