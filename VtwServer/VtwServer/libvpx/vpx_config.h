@@ -9,7 +9,7 @@
 #ifndef VPX_CONFIG_H
 #define VPX_CONFIG_H
 #define RESTRICT    
-#define INLINE      inline
+#define INLINE      __forceinline
 #define ARCH_ARM 0
 #define ARCH_MIPS 0
 #define ARCH_X86 0
@@ -31,10 +31,10 @@
 #define HAVE_AVX 1
 #define HAVE_AVX2 1
 #define HAVE_VPX_PORTS 1
-#define HAVE_PTHREAD_H 1
-#define HAVE_UNISTD_H 1
+#define HAVE_PTHREAD_H 0
+#define HAVE_UNISTD_H 0
 #define CONFIG_DEPENDENCY_TRACKING 1
-#define CONFIG_EXTERNAL_BUILD 0
+#define CONFIG_EXTERNAL_BUILD 1
 #define CONFIG_INSTALL_DOCS 0
 #define CONFIG_INSTALL_BINS 1
 #define CONFIG_INSTALL_LIBS 1
@@ -43,8 +43,8 @@
 #define CONFIG_GPROF 0
 #define CONFIG_GCOV 0
 #define CONFIG_RVCT 0
-#define CONFIG_GCC 1
-#define CONFIG_MSVS 0
+#define CONFIG_GCC 0
+#define CONFIG_MSVS 1
 #define CONFIG_PIC 0
 #define CONFIG_BIG_ENDIAN 0
 #define CONFIG_CODEC_SRCS 0
