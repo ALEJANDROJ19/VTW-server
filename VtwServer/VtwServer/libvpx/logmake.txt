@@ -1,0 +1,66 @@
+    [CREATE] vpx.def
+    [CREATE] vpx_config.asm
+    [CREATE] vpx_scale_rtcd.h
+    [CREATE] vpx_dsp_rtcd.h
+    [CREATE] vp8_rtcd.h
+    [CREATE] vp9_rtcd.h
+    [CREATE] vpx.vcxproj
+    [CREATE] gtest.vcxproj
+    [CREATE] test_libvpx.vcxproj
+    [CREATE] test_intra_pred_speed.vcxproj
+make[1]: Nothing to be done for `all'.
+    [CREATE] vpx.sln
+/home/alejandro/Escriptori/gittmp/VTW-server/VtwServer/VtwServer/libvpx/build/make/gen_msvs_sln.sh \
+             --dep=test_intra_pred_speed:vpx  --dep=test_libvpx:vpx \
+            --dep=test_libvpx:gtest \
+            --ver=14\
+            --out=vpx.sln gtest.vcxproj test_intra_pred_speed.vcxproj test_libvpx.vcxproj vpx.vcxproj
+  * msbuild.exe not found in path.
+  * 
+  * You will have to build all configurations manually using the
+  * Visual Studio IDE. To allow make to build them automatically,
+  * add the Common7/IDE directory of your Visual Studio
+  * installation to your path, eg:
+  *   C:\Program Files\Microsoft Visual Studio 10.0\Common7\IDE
+  * 
+  * Skipping build of Debug|x64 (msbuild.exe not in path).
+  * 
+  * Skipping build of Release|x64 (msbuild.exe not in path).
+  *
+
+
+
+----
+
+
+generating filter 'Source Files' from 441 files
+generating filter 'Header Files' from 201 files
+generating filter 'Build Files' from 20 files
+generating filter 'References' from 7 files
+Ignored files list (7 items) is:
+    CHANGELOG
+    vpx_scale/vpx_scale_rtcd.pl
+    vpx_dsp/vpx_dsp_rtcd_defs.pl
+    vp8/common/rtcd_defs.pl
+    vp9/common/vp9_rtcd_defs.pl
+    build/make/version.sh
+    build/make/rtcd.pl
+generating filter 'Source Files' from 1 files
+generating filter 'Header Files' from 0 files
+generating filter 'Build Files' from 0 files
+generating filter 'References' from 0 files
+Ignored files list (0 items) is:
+generating filter 'Source Files' from 103 files
+generating filter 'Header Files' from 27 files
+generating filter 'Build Files' from 4 files
+generating filter 'References' from 2 files
+Ignored files list (0 items) is:
+generating filter 'Source Files' from 5 files
+generating filter 'Header Files' from 3 files
+generating filter 'Build Files' from 2 files
+generating filter 'References' from 2 files
+Ignored files list (0 items) is:
+
+
+----
+ 

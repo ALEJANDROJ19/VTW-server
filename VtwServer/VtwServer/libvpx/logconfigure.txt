@@ -1,0 +1,26 @@
+  disabling examples
+  enabling vp8_encoder
+  enabling vp8_decoder
+  enabling vp9_encoder
+  enabling vp9_decoder
+Configuring for target 'x86_64-win64-vs14'
+  enabling x86_64
+  enabling runtime_cpu_detect
+  enabling mmx
+  enabling sse
+  enabling sse2
+  enabling sse3
+  enabling ssse3
+  enabling sse4_1
+  enabling avx
+  enabling avx2
+  using msvs
+  disabling ccache
+  enabling postproc
+  enabling unit_tests
+  enabling webm_io
+  enabling libyuv
+Bypassing toolchain for environment detection.
+Creating makefiles for x86_64-win64-vs14 libs
+Creating makefiles for x86_64-win64-vs14 docs
+Creating makefiles for x86_64-win64-vs14 solution
