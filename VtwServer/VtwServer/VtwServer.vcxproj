@@ -77,9 +77,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\libraries\libvpx;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\libraries\libvpx;$(IncludePath)</IncludePath>
-    <SourcePath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\libraries\libvpx;$(SourcePath)</SourcePath>
+    <LibraryPath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\lib;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\lib;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -106,9 +106,10 @@
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>vpxmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
+      <AdditionalLibraryDirectories>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -145,6 +146,8 @@
     <ClInclude Include="InterfaceForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="lib\vp8_rtcd.h" />
+    <ClInclude Include="lib\vpx_scale_rtcd.h" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="InterfaceForm.resx">
@@ -170,7 +173,10 @@
     </COMReference>
   </ItemGroup>
   <ItemGroup>
-    <Library Include="lib\vpxmtd.lib" />
+    <Library Include="lib\vpxmtd.lib">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</ExcludedFromBuild>
+      <DeploymentContent Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</DeploymentContent>
+    </Library>
   </ItemGroup>
   <ItemGroup>
     <None Include="lib\vpx\vpx.pdb" />
