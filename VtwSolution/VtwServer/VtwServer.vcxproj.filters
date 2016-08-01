@@ -31,12 +31,9 @@
     <ClInclude Include="InterfaceForm.h">
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="lib\vpxmt.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="lib\vpx\vpxmt.pch" />
+    <ClInclude Include="Source Code\Encoder.h">
+      <Filter>Archivos de encabezado</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="InterfaceForm.resx" />

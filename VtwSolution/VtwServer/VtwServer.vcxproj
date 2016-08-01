@@ -77,9 +77,9 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\libvpx;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\libvpx;$(IncludePath)</IncludePath>
-    <SourcePath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\libvpx;$(SourcePath)</SourcePath>
+    <LibraryPath>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
@@ -104,12 +104,12 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\x64\Debug;C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies>vpxmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
-      <AdditionalLibraryDirectories>C:\Users\recra\Source\Repos\VTW-server\VtwServer\VtwServer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>vpxmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,6 +146,7 @@
     <ClInclude Include="InterfaceForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
+    <ClInclude Include="Source Code\Encoder.h" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="WMPLib.1.0.dll">
@@ -164,12 +165,6 @@
       <Lcid>0</Lcid>
       <Isolated>false</Isolated>
     </COMReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Library Include="lib\vpxmt.lib" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="lib\vpx\vpxmt.pch" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="InterfaceForm.resx" />
