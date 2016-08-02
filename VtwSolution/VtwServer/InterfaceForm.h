@@ -39,7 +39,7 @@ namespace VtwServer {
 	private: System::Windows::Forms::Button^  button2;
 	private: System::Windows::Forms::ProgressBar^  progressBar1;
 	private: System::Windows::Forms::TextBox^  textBox1;
-	private: AxWMPLib::AxWindowsMediaPlayer^  axWindowsMediaPlayer1;
+	//private: AxWMPLib::AxWindowsMediaPlayer^  axWindowsMediaPlayer1;
 
 	private:
 		/// <summary>
@@ -59,8 +59,8 @@ namespace VtwServer {
 			this->button2 = (gcnew System::Windows::Forms::Button());
 			this->progressBar1 = (gcnew System::Windows::Forms::ProgressBar());
 			this->textBox1 = (gcnew System::Windows::Forms::TextBox());
-			this->axWindowsMediaPlayer1 = (gcnew AxWMPLib::AxWindowsMediaPlayer());
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->axWindowsMediaPlayer1))->BeginInit();
+			//this->axWindowsMediaPlayer1 = (gcnew AxWMPLib::AxWindowsMediaPlayer());
+			//(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->axWindowsMediaPlayer1))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// button1
@@ -101,26 +101,26 @@ namespace VtwServer {
 			// 
 			// axWindowsMediaPlayer1
 			// 
-			this->axWindowsMediaPlayer1->Enabled = true;
+			/*this->axWindowsMediaPlayer1->Enabled = true;
 			this->axWindowsMediaPlayer1->Location = System::Drawing::Point(12, 99);
 			this->axWindowsMediaPlayer1->Name = L"axWindowsMediaPlayer1";
 			this->axWindowsMediaPlayer1->OcxState = (cli::safe_cast<System::Windows::Forms::AxHost::State^>(resources->GetObject(L"axWindowsMediaPlayer1.OcxState")));
 			this->axWindowsMediaPlayer1->Size = System::Drawing::Size(547, 347);
-			this->axWindowsMediaPlayer1->TabIndex = 4;
+			this->axWindowsMediaPlayer1->TabIndex = 4;*/
 			// 
 			// InterfaceForm
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(571, 458);
-			this->Controls->Add(this->axWindowsMediaPlayer1);
+			//this->Controls->Add(this->axWindowsMediaPlayer1);
 			this->Controls->Add(this->textBox1);
 			this->Controls->Add(this->progressBar1);
 			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Name = L"InterfaceForm";
 			this->Text = L"InterfaceForm";
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->axWindowsMediaPlayer1))->EndInit();
+			//(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->axWindowsMediaPlayer1))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 

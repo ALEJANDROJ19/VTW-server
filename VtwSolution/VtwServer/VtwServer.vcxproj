@@ -45,7 +45,6 @@
     <UseDebugLibraries>true</UseDebugLibraries>
     <PlatformToolset>v140</PlatformToolset>
     <CLRSupport>true</CLRSupport>
-    <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
@@ -74,27 +73,30 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <LibraryPath>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;$(LibraryPath)</LibraryPath>
-    <IncludePath>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;$(IncludePath)</IncludePath>
-    <SourcePath>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;$(SourcePath)</SourcePath>
+    <IncludePath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;$(LibraryPath)</LibraryPath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <AdditionalDependencies />
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
@@ -104,12 +106,13 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\recra\Source\Repos\VTW-server\VtwSolution\x64\Debug;C:\Users\recra\Source\Repos\VTW-server\VtwSolution\libvpx;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libswscale;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libswresample;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libpostproc;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavutil;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavformat;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavfilter;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavdevice;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavcodec;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
-      <AdditionalDependencies>vpxmtd.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -125,9 +128,12 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
+    <Link />
     <Link>
-      <AdditionalDependencies />
+      <SubSystem>Windows</SubSystem>
+      <EntryPointSymbol>Main</EntryPointSymbol>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
@@ -138,15 +144,120 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Source Code\Encoder.cpp" />
-    <ClCompile Include="Source Code\Error_Handler.cpp" />
-    <ClCompile Include="Source Code\InterfaceForm.cpp" />
+    <ClCompile Include="Source\Encoder.cpp" />
+    <ClCompile Include="Source\Error_Handler.cpp" />
+    <ClCompile Include="Source\InterfaceForm.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="InterfaceForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
-    <ClInclude Include="Source Code\Encoder.h" />
+    <ClInclude Include="lib\libavcodec\avcodec.h" />
+    <ClInclude Include="lib\libavcodec\avdct.h" />
+    <ClInclude Include="lib\libavcodec\avfft.h" />
+    <ClInclude Include="lib\libavcodec\d3d11va.h" />
+    <ClInclude Include="lib\libavcodec\dirac.h" />
+    <ClInclude Include="lib\libavcodec\dv_profile.h" />
+    <ClInclude Include="lib\libavcodec\dxva2.h" />
+    <ClInclude Include="lib\libavcodec\jni.h" />
+    <ClInclude Include="lib\libavcodec\mediacodec.h" />
+    <ClInclude Include="lib\libavcodec\qsv.h" />
+    <ClInclude Include="lib\libavcodec\vaapi.h" />
+    <ClInclude Include="lib\libavcodec\vda.h" />
+    <ClInclude Include="lib\libavcodec\vdpau.h" />
+    <ClInclude Include="lib\libavcodec\version.h" />
+    <ClInclude Include="lib\libavcodec\videotoolbox.h" />
+    <ClInclude Include="lib\libavcodec\vorbis_parser.h" />
+    <ClInclude Include="lib\libavcodec\xvmc.h" />
+    <ClInclude Include="lib\libavdevice\avdevice.h" />
+    <ClInclude Include="lib\libavdevice\version.h" />
+    <ClInclude Include="lib\libavfilter\avfilter.h" />
+    <ClInclude Include="lib\libavfilter\avfiltergraph.h" />
+    <ClInclude Include="lib\libavfilter\buffersink.h" />
+    <ClInclude Include="lib\libavfilter\buffersrc.h" />
+    <ClInclude Include="lib\libavfilter\version.h" />
+    <ClInclude Include="lib\libavformat\avformat.h" />
+    <ClInclude Include="lib\libavformat\avio.h" />
+    <ClInclude Include="lib\libavformat\version.h" />
+    <ClInclude Include="lib\libavutil\adler32.h" />
+    <ClInclude Include="lib\libavutil\aes.h" />
+    <ClInclude Include="lib\libavutil\aes_ctr.h" />
+    <ClInclude Include="lib\libavutil\attributes.h" />
+    <ClInclude Include="lib\libavutil\audio_fifo.h" />
+    <ClInclude Include="lib\libavutil\avassert.h" />
+    <ClInclude Include="lib\libavutil\avconfig.h" />
+    <ClInclude Include="lib\libavutil\avstring.h" />
+    <ClInclude Include="lib\libavutil\avutil.h" />
+    <ClInclude Include="lib\libavutil\base64.h" />
+    <ClInclude Include="lib\libavutil\blowfish.h" />
+    <ClInclude Include="lib\libavutil\bprint.h" />
+    <ClInclude Include="lib\libavutil\bswap.h" />
+    <ClInclude Include="lib\libavutil\buffer.h" />
+    <ClInclude Include="lib\libavutil\camellia.h" />
+    <ClInclude Include="lib\libavutil\cast5.h" />
+    <ClInclude Include="lib\libavutil\channel_layout.h" />
+    <ClInclude Include="lib\libavutil\common.h" />
+    <ClInclude Include="lib\libavutil\cpu.h" />
+    <ClInclude Include="lib\libavutil\crc.h" />
+    <ClInclude Include="lib\libavutil\des.h" />
+    <ClInclude Include="lib\libavutil\dict.h" />
+    <ClInclude Include="lib\libavutil\display.h" />
+    <ClInclude Include="lib\libavutil\downmix_info.h" />
+    <ClInclude Include="lib\libavutil\error.h" />
+    <ClInclude Include="lib\libavutil\eval.h" />
+    <ClInclude Include="lib\libavutil\ffversion.h" />
+    <ClInclude Include="lib\libavutil\fifo.h" />
+    <ClInclude Include="lib\libavutil\file.h" />
+    <ClInclude Include="lib\libavutil\frame.h" />
+    <ClInclude Include="lib\libavutil\hash.h" />
+    <ClInclude Include="lib\libavutil\hmac.h" />
+    <ClInclude Include="lib\libavutil\hwcontext.h" />
+    <ClInclude Include="lib\libavutil\hwcontext_cuda.h" />
+    <ClInclude Include="lib\libavutil\hwcontext_dxva2.h" />
+    <ClInclude Include="lib\libavutil\hwcontext_vaapi.h" />
+    <ClInclude Include="lib\libavutil\hwcontext_vdpau.h" />
+    <ClInclude Include="lib\libavutil\imgutils.h" />
+    <ClInclude Include="lib\libavutil\intfloat.h" />
+    <ClInclude Include="lib\libavutil\intreadwrite.h" />
+    <ClInclude Include="lib\libavutil\lfg.h" />
+    <ClInclude Include="lib\libavutil\log.h" />
+    <ClInclude Include="lib\libavutil\lzo.h" />
+    <ClInclude Include="lib\libavutil\macros.h" />
+    <ClInclude Include="lib\libavutil\mastering_display_metadata.h" />
+    <ClInclude Include="lib\libavutil\mathematics.h" />
+    <ClInclude Include="lib\libavutil\md5.h" />
+    <ClInclude Include="lib\libavutil\mem.h" />
+    <ClInclude Include="lib\libavutil\motion_vector.h" />
+    <ClInclude Include="lib\libavutil\murmur3.h" />
+    <ClInclude Include="lib\libavutil\opt.h" />
+    <ClInclude Include="lib\libavutil\parseutils.h" />
+    <ClInclude Include="lib\libavutil\pixdesc.h" />
+    <ClInclude Include="lib\libavutil\pixelutils.h" />
+    <ClInclude Include="lib\libavutil\pixfmt.h" />
+    <ClInclude Include="lib\libavutil\random_seed.h" />
+    <ClInclude Include="lib\libavutil\rational.h" />
+    <ClInclude Include="lib\libavutil\rc4.h" />
+    <ClInclude Include="lib\libavutil\replaygain.h" />
+    <ClInclude Include="lib\libavutil\ripemd.h" />
+    <ClInclude Include="lib\libavutil\samplefmt.h" />
+    <ClInclude Include="lib\libavutil\sha.h" />
+    <ClInclude Include="lib\libavutil\sha512.h" />
+    <ClInclude Include="lib\libavutil\stereo3d.h" />
+    <ClInclude Include="lib\libavutil\tea.h" />
+    <ClInclude Include="lib\libavutil\threadmessage.h" />
+    <ClInclude Include="lib\libavutil\time.h" />
+    <ClInclude Include="lib\libavutil\timecode.h" />
+    <ClInclude Include="lib\libavutil\timestamp.h" />
+    <ClInclude Include="lib\libavutil\tree.h" />
+    <ClInclude Include="lib\libavutil\twofish.h" />
+    <ClInclude Include="lib\libavutil\version.h" />
+    <ClInclude Include="lib\libavutil\xtea.h" />
+    <ClInclude Include="lib\libpostproc\postprocess.h" />
+    <ClInclude Include="lib\libpostproc\version.h" />
+    <ClInclude Include="lib\libswresample\swresample.h" />
+    <ClInclude Include="lib\libswresample\version.h" />
+    <ClInclude Include="lib\libswscale\swscale.h" />
+    <ClInclude Include="lib\libswscale\version.h" />
   </ItemGroup>
   <ItemGroup>
     <COMReference Include="WMPLib.1.0.dll">
@@ -168,6 +279,16 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="InterfaceForm.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="lib\avcodec.lib" />
+    <Library Include="lib\avdevice.lib" />
+    <Library Include="lib\avfilter.lib" />
+    <Library Include="lib\avformat.lib" />
+    <Library Include="lib\avutil.lib" />
+    <Library Include="lib\postproc.lib" />
+    <Library Include="lib\swresample.lib" />
+    <Library Include="lib\swscale.lib" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
