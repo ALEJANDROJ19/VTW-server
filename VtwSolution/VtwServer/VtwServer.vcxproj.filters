@@ -15,6 +15,9 @@
     <Filter Include="Archivos de encabezado\src">
       <UniqueIdentifier>{816cfd28-e637-4783-bb9b-3a4709fb3a97}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Archivos de encabezado\src\fflib">
+      <UniqueIdentifier>{470ee97b-5e85-49e0-ac8a-5cccce359b0c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Source\Encoder.cpp">
@@ -32,321 +35,324 @@
       <Filter>Archivos de encabezado</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavcodec\xvmc.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\vorbis_parser.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\videotoolbox.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\vdpau.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\vda.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\vaapi.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\qsv.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\mediacodec.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\jni.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\dxva2.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\dv_profile.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\dirac.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\d3d11va.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\avfft.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\avdct.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavcodec\avcodec.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\adler32.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\aes.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\aes_ctr.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\attributes.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\audio_fifo.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\avassert.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\avconfig.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavdevice\avdevice.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavfilter\avfilter.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavfilter\avfiltergraph.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavformat\avformat.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavformat\avio.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\avstring.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\avutil.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\base64.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\blowfish.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\bprint.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\bswap.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\buffer.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavfilter\buffersink.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavfilter\buffersrc.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\camellia.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\cast5.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\channel_layout.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\common.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\cpu.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\crc.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\des.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\dict.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\display.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\downmix_info.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\error.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\eval.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\ffversion.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\fifo.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\file.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\frame.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\hash.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\hmac.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\hwcontext.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\hwcontext_cuda.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\hwcontext_dxva2.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\hwcontext_vaapi.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\hwcontext_vdpau.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\imgutils.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\xtea.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
-    <ClInclude Include="lib\libswresample\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
+    <ClInclude Include="lib\libavcodec\vorbis_parser.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
-    <ClInclude Include="lib\libpostproc\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavutil\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
+    <ClInclude Include="lib\libavcodec\videotoolbox.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libswscale\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
-    </ClInclude>
-    <ClInclude Include="lib\libavformat\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavfilter\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavdevice\version.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libpostproc\version.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\version.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\version.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libswresample\version.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavformat\version.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\vdpau.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\vda.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\vaapi.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\twofish.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\tree.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\timestamp.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\timecode.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\time.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\threadmessage.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\tea.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libswscale\swscale.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libswresample\swresample.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\stereo3d.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\sha512.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\sha.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\samplefmt.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\ripemd.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\replaygain.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\rc4.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\rational.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\random_seed.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\qsv.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libpostproc\postprocess.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\pixfmt.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\pixelutils.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\pixdesc.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\parseutils.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\opt.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\murmur3.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\motion_vector.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\mem.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\mediacodec.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\md5.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\mathematics.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\mastering_display_metadata.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\macros.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\lzo.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\log.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\lfg.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\jni.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\intreadwrite.h">
-      <Filter>Archivos de encabezado\src</Filter>
+      <Filter>Archivos de encabezado\src\fflib</Filter>
     </ClInclude>
     <ClInclude Include="lib\libavutil\intfloat.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\imgutils.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\hwcontext_vdpau.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\hwcontext_vaapi.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\hwcontext_dxva2.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\hwcontext_cuda.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\hwcontext.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\hmac.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\hash.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\frame.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\file.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\fifo.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\ffversion.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\eval.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\error.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\dxva2.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\dv_profile.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\downmix_info.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\display.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\dirac.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\dict.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\des.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\d3d11va.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\crc.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\cpu.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\common.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\channel_layout.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\cast5.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\camellia.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavfilter\buffersrc.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavfilter\buffersink.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\buffer.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\bswap.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\bprint.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\blowfish.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\base64.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\avutil.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\avstring.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavformat\avio.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavformat\avformat.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavfilter\avfiltergraph.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavfilter\avfilter.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\avfft.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavdevice\avdevice.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\avdct.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\avconfig.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavcodec\avcodec.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\avassert.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\audio_fifo.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\attributes.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\aes_ctr.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\aes.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="lib\libavutil\adler32.h">
+      <Filter>Archivos de encabezado\src\fflib</Filter>
+    </ClInclude>
+    <ClInclude Include="Encoder.h">
       <Filter>Archivos de encabezado\src</Filter>
     </ClInclude>
   </ItemGroup>

@@ -109,7 +109,7 @@
       <AdditionalIncludeDirectories>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libswscale;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libswresample;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libpostproc;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavutil;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavformat;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavfilter;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavdevice;C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib\libavcodec;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
-      <SubSystem>Windows</SubSystem>
+      <SubSystem>Console</SubSystem>
       <EntryPointSymbol>Main</EntryPointSymbol>
       <AdditionalLibraryDirectories>C:\Users\recra\Documents\Visual Studio 2015\Projects\VtwSolution\VtwServer\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <AdditionalDependencies>avcodec.lib;avdevice.lib;avfilter.lib;avformat.lib;avutil.lib;postproc.lib;swresample.lib;swscale.lib;%(AdditionalDependencies)</AdditionalDependencies>
@@ -149,6 +149,7 @@
     <ClCompile Include="Source\InterfaceForm.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Encoder.h" />
     <ClInclude Include="InterfaceForm.h">
       <FileType>CppForm</FileType>
     </ClInclude>
