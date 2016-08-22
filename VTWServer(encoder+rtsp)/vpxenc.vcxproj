@@ -14,6 +14,7 @@
     <ProjectGuid>{548DEC74-7A15-4B2B-AFC3-AA102E7C25C1}</ProjectGuid>
     <RootNamespace>vpxenc</RootNamespace>
     <Keyword>ManagedCProj</Keyword>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
@@ -23,7 +24,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -35,8 +36,9 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
     <IntDir>x64\$(Configuration)\vpxenc\</IntDir>
-    <IncludePath>C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\x86inc;C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\libyuv;C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\googletest;C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\libwebm;$(IncludePath)</IncludePath>
-    <SourcePath>C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\x86inc;C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\libyuv;C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\libwebm;C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party\googletest;C:\Users\recra\Documents\Visual Studio 2015\Projects\libvpx-1.6.0\third_party;$(SourcePath)</SourcePath>
+    <IncludePath>C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\x86inc;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libyuv;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\googletest;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libwebm;$(IncludePath)</IncludePath>
+    <SourcePath>C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libyuv\include\libyuv;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\x86inc;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libyuv;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libwebm;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\googletest;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party;$(SourcePath)</SourcePath>
+    <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>
@@ -45,7 +47,6 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>"/home/pau/Documents/backup/libvpx/libvpx-1.6.0/third_party/libwebm";"/home/pau/Documents/backup/libvpx/libvpx-1.6.0/vp8";"/home/pau/Documents/backup/libvpx/libvpx-1.6.0/vp8";"/home/pau/Documents/backup/libvpx/libvpx-1.6.0/vp9";"/home/pau/Documents/backup/libvpx/libvpx-1.6.0/vp9";"/home/pau/Documents/backup/libvpx/libvpx-1.6.0/third_party/libyuv/include";".";"/home/pau/Documents/backup/libvpx/libvpx-1.6.0";%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CRT_SECURE_NO_WARNINGS;_CRT_SECURE_NO_DEPRECATE;;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>

@@ -6,7 +6,7 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vpxenc", "vpxenc.vcxproj", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vpx", "vpx.vcxproj", "{DCE19DAF-69AC-46DB-B14A-39F0FAA5DB74}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VTWServerCore", "..\VTWServerCore\VTWServerCore.vcxproj", "{DEB6465C-4189-4229-868A-FD08CF08BC01}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VTWServerCore", "VTWServerCore\VTWServerCore.vcxproj", "{DEB6465C-4189-4229-868A-FD08CF08BC01}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
