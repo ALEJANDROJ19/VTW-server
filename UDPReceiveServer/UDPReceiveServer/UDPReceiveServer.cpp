@@ -6,11 +6,21 @@
 #include <winsock2.h>
 #include <ws2tcpip.h>
 #include "lib\include\json\json.h"
-#include "JoistickThread.h"
 
 // Link with ws2_32.lib
 #pragma comment(lib, "Ws2_32.lib")
 #define DEFAULT_BUFLEN 128
+
+enum class MovementState {
+	Walking,
+	Running,
+	Swimming,
+	Flying
+};
+
+struct EventLoop {
+	MovementState movementstate() { return MovementState::Walking; }
+};
 
 int main() {
 	//----------------------
@@ -65,6 +75,7 @@ int main() {
 
 	//----------------------
 	// Receive Metod
+	EventLoop pigs;
 	do {
 		RecvResult = recvfrom(Socket, recvbuf, recvbuflen, 0, (struct sockaddr *) &si_other, &slen);
 		if (RecvResult > 0) {
@@ -83,7 +94,7 @@ int main() {
 				printf("x:%f, y:%f, z:%f\n", coordinates.x, coordinates.y, coordinates.z);
 			} else { printf("Error on json parsing: %s \n", reader.getFormattedErrorMessages()); }
 		} else { printf("recv failed: %d\n", WSAGetLastError()); }
-	} while (true); //TODO: while no stop
+	} while (pigs.movementstate() != MovementState::Flying); //TODO: while no stop
 
 	printf("Server Stop\n");
 
