@@ -9,13 +9,21 @@
 
 #include <stdio.h>
 #include <tchar.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <iostream>
+#include <winsock2.h>
+#include <Windows.h>
 
-struct CoordinatesXYZ
-{
-	float x;
-	float y;
-	float z;
-};
+#include <ws2tcpip.h>
+
+
+#include "translate.h"
+#include "CoordinatesXYZ.h"
+#include "CoordinatesXY.h"
+#include "controller.h"
+#include "controlmodule.h"
 
 
 // TODO: mencionar aquí los encabezados adicionales que el programa necesita
