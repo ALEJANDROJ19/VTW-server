@@ -24,7 +24,7 @@
     <WholeProgramOptimization>true</WholeProgramOptimization>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Application</ConfigurationType>
+    <ConfigurationType>StaticLibrary</ConfigurationType>
     <PlatformToolset>v140</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -38,7 +38,7 @@
     <IntDir>x64\$(Configuration)\vpxenc\</IntDir>
     <IncludePath>C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\x86inc;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libyuv;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\googletest;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libwebm;$(IncludePath)</IncludePath>
     <SourcePath>C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libyuv\include\libyuv;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\x86inc;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libyuv;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\libwebm;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party\googletest;C:\Users\recra\Source\Repos\VTW-server\VTWServer%28encoder+rtsp%29\third_party;$(SourcePath)</SourcePath>
-    <TargetExt>.exe</TargetExt>
+    <TargetExt>.lib</TargetExt>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <OutDir>$(SolutionDir)x64\$(Configuration)\</OutDir>

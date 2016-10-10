@@ -6,6 +6,8 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vpxenc", "vpxenc.vcxproj", 
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "vpx", "vpx.vcxproj", "{DCE19DAF-69AC-46DB-B14A-39F0FAA5DB74}"
 EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "VTWServerCore", "VTWServerCore\VTWServerCore.vcxproj", "{DEB6465C-4189-4229-868A-FD08CF08BC01}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -26,6 +28,14 @@ Global
 		{DCE19DAF-69AC-46DB-B14A-39F0FAA5DB74}.Release|x64.ActiveCfg = Release|x64
 		{DCE19DAF-69AC-46DB-B14A-39F0FAA5DB74}.Release|x64.Build.0 = Release|x64
 		{DCE19DAF-69AC-46DB-B14A-39F0FAA5DB74}.Release|x86.ActiveCfg = Release|x64
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Debug|x64.ActiveCfg = Debug|x64
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Debug|x64.Build.0 = Debug|x64
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Debug|x86.ActiveCfg = Debug|Win32
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Debug|x86.Build.0 = Debug|Win32
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Release|x64.ActiveCfg = Release|x64
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Release|x64.Build.0 = Release|x64
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Release|x86.ActiveCfg = Release|Win32
+		{DEB6465C-4189-4229-868A-FD08CF08BC01}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
