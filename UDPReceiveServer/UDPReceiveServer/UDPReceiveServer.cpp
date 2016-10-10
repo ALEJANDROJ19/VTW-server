@@ -3,9 +3,7 @@
 
 #include "stdafx.h"
 #define _WINSOCK_DEPRECATED_NO_WARNINGS
-#include <winsock2.h>
-#include <ws2tcpip.h>
-#include "lib\include\json\json.h"
+#include "Includes\json\json.h"
 
 // Link with ws2_32.lib
 #pragma comment(lib, "Ws2_32.lib")
@@ -75,6 +73,9 @@ int main() {
 
 	//----------------------
 	// Receive Metod
+
+	controlmodule _cmod(CoordinatesXY((GetSystemMetrics(SM_CXSCREEN) - 1) / 2, (GetSystemMetrics(SM_CYSCREEN) - 1) / 2));
+
 	EventLoop pigs;
 	do {
 		RecvResult = recvfrom(Socket, recvbuf, recvbuflen, 0, (struct sockaddr *) &si_other, &slen);
@@ -89,12 +90,13 @@ int main() {
 				coordinates.z = JsonData.get("z", "UTF-8").asDouble();
 				//TODO: call movement function passing coordinates
 				// ..
+				_cmod.input(coordinates);
 				// ..
 				// ..
 				printf("x:%f, y:%f, z:%f\n", coordinates.x, coordinates.y, coordinates.z);
 			} else { printf("Error on json parsing: %s \n", reader.getFormattedErrorMessages()); }
 		} else { printf("recv failed: %d\n", WSAGetLastError()); }
-	} while (pigs.movementstate() != MovementState::Flying); //TODO: while no stop
+	} while (pigs.movementstate() != MovementState::Flying); //TODO: while no stop While pigs don't fly
 
 	printf("Server Stop\n");
 
