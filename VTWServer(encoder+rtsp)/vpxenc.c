@@ -783,9 +783,9 @@ struct stream_config {
 
 
 struct stream_state {
-  int                       index;
-  struct stream_state      *next;
-  struct stream_config      config;
+  int                       index; //stream number (multiple streams)
+  struct stream_state      *next; //pointer to the next stream if exists (multiple streams)
+  struct stream_config      config; //Cofig of the stream ->stream_config
   FILE                     *file;
   struct rate_hist         *rate_hist;
   struct WebmOutputContext  webm_ctx;
@@ -1400,7 +1400,7 @@ static void open_output_file(struct stream_state *stream,
   if (cfg->g_pass == VPX_RC_FIRST_PASS)
     return;
 
-  stream->file = strcmp(fn, "-") ? fopen(fn, "wb") : set_binary_mode(stdout);
+  stream->file = strcmp(fn, "-") ? fopen(fn, "wb") : set_binary_mode(stdout); //stream->file init
 
   if (!stream->file)
     fatal("Failed to open output file");
